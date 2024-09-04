@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DenKat Fitness</title>
+    <style>
+      h1 {
+        background-color: #003366;
+        color: #ffff;
+        text-align: center;
+        background: linear-gradient(to right, #ff6600, #66cc33);
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+      }
+      body {
+        background-color: #f0f0f0;
+        color: #333333;
+      }
+      h2 {
+        text-align: center;
+        color: #003366;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgba (0, 0, 0, 0.1);
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.6;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #ffff;
+        background: #ff6600;
+        padding: 15px 30px;
+        border: 2px solid grey;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #cc5200;
+        color: white;
+        cursor: pointer;
+      }
+      .contacts {
+        text-align: center;
+        margin-top: 20px;
+        color: #003366;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        border: 2px solid #003366;
+        border-radius: 5px;
+      }
+      span {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DenKat fitness</h1>
+    <h2>"Your home of fitness"</h2>
+    <hr />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/828/original/safe-gym-return.jpg?1721210594"
+      alt="DenKat Fitness"
+    />
+    <hr />
+    <p>
+      Denkat is a premier fitness company dedicated to transforming lives
+      through personalized fitness and wellness programs. Founded on the
+      principles of commitment, community, and holistic health, Denkat offers a
+      wide range of services including personal training, group classes, and
+      nutrition counseling. Our team of experienced trainers and health
+      professionals is passionate about helping you achieve your fitness goals
+      and lead a healthier, more active lifestyle. Join us at Denkat and become
+      part of a supportive community that motivates and inspires you to be your
+      best self.
+    </p>
+    <button>Get Started Today</button>
+    <br />
+    <div class="contacts">
+      <strong>Email: </strong>
+      <span class="help">
+        <em
+          ><a href="mailto:kanjachristabel@gmail.com">denkatfitness.io</a></em
+        ></span
+      >
+      <strong> Instagram</strong>
+      <span class="social"> @denkat_fitness </span>
+    </div>
+    <script>
+      function contactUs() {
+        let name = prompt("What is your name?");
+        let email = prompt("Please enter email to get started");
+        if (email) {
+          alert(
+            "Thank you " +
+              name +
+              "! We will contact you at " +
+              email +
+              " shortly"
+          );
+        } else {
+          alert("Hey " + name + "! please enter a valid email to get started");
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", contactUs);
+    </script>
+  </body>
+</html>
